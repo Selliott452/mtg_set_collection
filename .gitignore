@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+*.log
+
+# Notes to Claude, not part of the site
+CLAUDE.md
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

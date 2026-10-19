@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTG Master Sets</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <h1><a href="#/">Master Sets</a></h1>
+      <div class="actions">
+        <span id="mode" class="badge"></span>
+        <button id="keyBtn" hidden>Write key</button>
+      </div>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+</header>
+
+<main class="wrap" id="view"><p class="empty">Loading…</p></main>
+
+<dialog id="keyDialog">
+  <form method="dialog">
+    <h2>Write key</h2>
+    <p>Paste the token that <code>setup()</code> logged in Apps Script. It's stored in this browser only; leave it blank to go read-only.</p>
+    <input id="keyInput" type="password" autocomplete="off" spellcheck="false">
+    <menu>
+      <button type="button" onclick="this.closest('dialog').close('cancel')">Cancel</button>
+      <button value="save" class="primary">Save</button>
+    </menu>
+  </form>
+</dialog>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
